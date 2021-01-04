@@ -1,3 +1,3 @@
 # SwiftARCTest
 
-[ARC 내용 정리](https://lsh424.tistory.com/77)
+<a href="https://techstock.biz" target="_blank"> ARC 내용 정리</a>
