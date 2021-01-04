@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Delegate Test Controller-->
+        <scene sceneID="s3e-ZX-7Jq">
+            <objects>
+                <viewController storyboardIdentifier="delegateTest" id="36h-ej-rQO" customClass="DelegateTestController" customModule="SwiftARCTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5ms-G1-M36">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DelegateTest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpY-IQ-OVx">
+                                <rect key="frame" x="138" y="94" width="138" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TW7-AB-2Nz" customClass="DelegateTestView" customModule="SwiftARCTest" customModuleProvider="target">
+                                <rect key="frame" x="87" y="337.5" width="240" height="231"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TW7-AB-2Nz" secondAttribute="height" multiplier="80:77" id="dam-TS-ULg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hbi-aX-STW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TW7-AB-2Nz" firstAttribute="centerX" secondItem="hbi-aX-STW" secondAttribute="centerX" id="Tfk-9w-zEi"/>
+                            <constraint firstItem="tpY-IQ-OVx" firstAttribute="centerX" secondItem="hbi-aX-STW" secondAttribute="centerX" id="b7J-0T-Rre"/>
+                            <constraint firstItem="TW7-AB-2Nz" firstAttribute="width" secondItem="5ms-G1-M36" secondAttribute="width" multiplier="0.57971" id="fHC-Wi-Ews"/>
+                            <constraint firstItem="TW7-AB-2Nz" firstAttribute="centerY" secondItem="hbi-aX-STW" secondAttribute="centerY" id="jMT-Bz-gtJ"/>
+                            <constraint firstItem="tpY-IQ-OVx" firstAttribute="top" secondItem="hbi-aX-STW" secondAttribute="top" constant="50" id="jgg-uG-SxY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="delegateTestView" destination="TW7-AB-2Nz" id="Lih-gw-eVS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tYz-dj-1kX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-107.24637681159422" y="126.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

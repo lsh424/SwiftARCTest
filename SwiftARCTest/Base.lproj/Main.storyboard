@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xWF-H3-EeU">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ARC TEST-->
+        <scene sceneID="ywQ-DL-cYg">
+            <objects>
+                <viewController id="OGa-l5-hSd" customClass="MainController" customModule="SwiftARCTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="acC-j1-rT9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="v74-7A-x0a">
+                                <rect key="frame" x="50" y="251" width="314" height="448"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sWa-EL-NeV">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="98.5"/>
+                                        <state key="normal" title="Reference Test"/>
+                                        <connections>
+                                            <action selector="didPressReferenceTest:" destination="OGa-l5-hSd" eventType="touchUpInside" id="ykc-BS-Tx5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ess-jo-kgI">
+                                        <rect key="frame" x="0.0" y="116.5" width="314" height="98.5"/>
+                                        <state key="normal" title="Weak And Unowned Test"/>
+                                        <connections>
+                                            <action selector="didPressWeakAndUnownedTest:" destination="OGa-l5-hSd" eventType="touchUpInside" id="Xd7-2Z-nft"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFZ-bC-m08">
+                                        <rect key="frame" x="0.0" y="233" width="314" height="98.5"/>
+                                        <state key="normal" title="Closure Test"/>
+                                        <connections>
+                                            <action selector="didPressClosureTest:" destination="OGa-l5-hSd" eventType="touchUpInside" id="0rn-zO-m1F"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBt-Yn-U8g">
+                                        <rect key="frame" x="0.0" y="349.5" width="314" height="98.5"/>
+                                        <state key="normal" title="Delegate Test"/>
+                                        <connections>
+                                            <action selector="didPressDelegateTest:" destination="OGa-l5-hSd" eventType="touchUpInside" id="KRl-ID-tbi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ozT-WF-Bti"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="v74-7A-x0a" firstAttribute="centerY" secondItem="ozT-WF-Bti" secondAttribute="centerY" id="5I0-Fk-7aT"/>
+                            <constraint firstItem="ozT-WF-Bti" firstAttribute="trailing" secondItem="v74-7A-x0a" secondAttribute="trailing" constant="50" id="IFr-so-Wpn"/>
+                            <constraint firstItem="v74-7A-x0a" firstAttribute="height" secondItem="acC-j1-rT9" secondAttribute="height" multiplier="0.5" id="L1E-mj-C2t"/>
+                            <constraint firstItem="v74-7A-x0a" firstAttribute="centerX" secondItem="ozT-WF-Bti" secondAttribute="centerX" id="MIX-Dm-Wtp"/>
+                            <constraint firstItem="v74-7A-x0a" firstAttribute="leading" secondItem="ozT-WF-Bti" secondAttribute="leading" constant="50" id="Tsz-32-HRr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ARC TEST" id="caP-Ss-2qs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4FT-E1-WXv" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1605.7971014492755" y="81.696428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="lK5-aG-CJx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xWF-H3-EeU" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zxp-bU-8g2">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OGa-l5-hSd" kind="relationship" relationship="rootViewController" id="Qnh-O2-foV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Wk-gM-WTe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="695.6521739130435" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
